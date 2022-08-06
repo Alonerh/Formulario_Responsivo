@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet"  type="text/css" href="index.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
+        <div class="barra"></div>
+    </header>
+    <main class="forms-container">
+        <form class="formulario1">
+            <label class="label">
+                Nome Completo:<br><input type="text" name="nome" id="nome"
+                 placeholder="Nome Completo" size="35" autofocus class="inputs">
+            </label><br>        
+            <label class="label">
+                RG:<br><input type="number" name="rg" id="rg" pattern="[0-9]{11}" placeholder="00.000.000-0" class="inputs">
+            </label><br>      
+            <label class="label">
+                Pai:<br><input type="text" name="pai" id="pai" placeholder="Nome do pai" size="30" class="inputs">
+            </label><br>       
+            <label class="label">
+                Escolaridade:<br>
+                <select class="inputs" id="select">
+                    <option disabled selected>Selecione</option>
+                    <option value="">Fundamental</option>
+                    <option value="">Médio</option>
+                    <option value="">Superior</option>
+                </select><br>
+            </label>        
+            <label class="label">
+                Telefone:<br><input type="tel" name="telefone" id="telefone" placeholder="0000-0000" class="inputs">
+            </label><br><br>   
+            <div class="botoes-container">
+                <div class="cadastrar">Cadastrar</div> 
+                <div class="limpar">Limpar Campos</div> 
+                 
+            </div>   
+        </form>
+
+        
+        <form class="formulario2">
+            <label class="label">
+                Email:<br><input type="email" name="email" id="email"
+                pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" required
+                title="Endereço de Email" placeholder="exemplo@email.com" class="inputs"><br>
+            </label>
+            <label class="label">
+                Data de nascimento:<br><input type="date" name="birthdate" id="birthdate" max="2022-12-31" class="inputs">
+            </label><br>
+            <label class="label">
+                CPF:<br><input type="number" name="cpf" id="cpf" pattern="[0-9]{11}"
+                placeholder="00.000.000-0" class="inputs">
+            </label><br>
+            <label class="label" >
+                Mãe:<br><input type="text" name="mae" id="mae" placeholder="Nome da mãe" class="inputs">
+            </label><br>
+            <label class="label">
+                Profissão:<br><input type="text" name="profission" id="profission" placeholder="Profissão" class="inputs">
+            </label><br><br>
+        </form>
+    </main>
+    
+    <footer><em>&copy Criado por Rafael Alcantara</em></footer>
+</html>

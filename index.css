@@ -1,0 +1,199 @@
+* {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+}
+input::-webkit-calendar-picker-indicator{
+        display: none;
+}
+
+.label {
+        margin-top: 3px;
+}
+
+input {
+        margin-top: 3px;
+        margin-bottom: 8px;
+}
+
+.barra {
+        background-color: #45543d;
+        height: 50px;
+}
+
+input .telefone {
+        margin-bottom: 0;
+}
+
+.inputs {
+        border-radius: 5px;
+        border: 1px solid #cccccc;
+        background-color: #e8efe4;
+        padding: 10px;
+        font-size: 13px;
+        margin-top: 5px;
+}
+::placeholder{
+        color: #b6b4b4;
+}
+
+#select {
+        margin-top: 3px;
+        margin-bottom: 8px;
+        padding-right: 0; 
+}
+
+.forms-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+}
+
+.formulario1 {
+        margin-right: 200px;
+}
+
+#telefone {
+        margin-bottom: 0;
+}
+
+.botoes-container {
+        display: flex;
+}
+
+.cadastrar {
+        display: block;
+        background-color: #45543d;
+        border: 1px solid #cccccc;
+        width: fit-content;
+        margin-right: 4px;
+        padding: 10px;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 13px;
+        cursor: pointer;
+}
+.cadastrar:hover,
+.limpar:hover {
+        background-color: #1d241a;
+}
+.limpar {
+        display: block;
+        background-color: #45543d;
+        border: 1px solid #cccccc;
+        width: fit-content;
+        padding: 10px;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 13px;
+        cursor: pointer;
+}
+#cpf,
+#email,
+#mae,
+#profission {
+        padding-right: 70px;
+}
+#birthdate{
+        padding-right: 144px;
+}
+
+footer {
+        display: flex;
+        position: fixed;
+        bottom: 50px;
+        left: 60px;
+        opacity: 0.1;
+}
+
+
+
+
+@media (min-width: 622px) and (max-width:888px) {
+        .forms-container {
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 50px;        
+        }
+        .formulario1 {
+                width: 270px;
+        }
+        .formulario2 {
+                width: 390px;
+                margin-left: 40px;
+        }
+        .botoes-container{
+                display: flex;
+                justify-content: end;
+                position: absolute;
+                bottom: -340px;
+                margin-bottom: 20px;
+        }.formulario1 {
+                margin-right: 80px;
+        }
+}
+@media (min-width: 511px) and (max-width: 621px) {
+        .forms-container {
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 50px;        
+        }
+        .formulario2 {
+                margin-right: 245px;
+        }
+        .botoes-container{
+                display: flex;
+                justify-content: end;
+                position: absolute;
+                bottom: -340px;
+                margin-bottom: 20px;
+        }
+}
+@media (min-width: 401px) and (max-width: 510px){
+        .forms-container {
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 50px;        
+        }
+        .formulario1 {
+                width: 150px;
+        }
+        .formulario2 {
+                width: 390px;
+                margin-left: 40px;
+        }
+        .botoes-container{
+                display: flex;
+                justify-content: end;
+                position: absolute;
+                bottom: -340px;
+                margin-bottom: 20px;
+        }
+}
+@media (min-width: 319px) and (max-width: 400px) {
+        .forms-container {
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 50px;        
+        }
+        .formulario1 {
+                width: 97px;
+        }
+        .formulario2 {
+                width: 297px;
+        }
+        .botoes-container{
+                display: flex;
+                justify-content: end;
+                position: absolute;
+                bottom: -350px;
+                margin-bottom: 20px;
+        }
+
+}
+
